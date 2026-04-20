@@ -18,6 +18,7 @@
             align-items: center;
             justify-content: center;
             padding: 20px 15px;
+            padding-bottom: 80px; /* 给底部预留导航栏空间，避免二维码被挡住 */
         }
         .main-card {
             background: white;
@@ -43,18 +44,19 @@
             opacity: 0.95;
         }
         .steps-section {
-            padding: 30px 25px;
+            padding: 30px 20px;
             border-bottom: 1px solid #f0f0f0;
             display: flex;
             justify-content: center;
         }
         .step-list {
-            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
         .step-item {
             display: flex;
-            align-items: center; /* 图标和文字垂直居中对齐 */
-            margin-bottom: 20px;
+            align-items: center;
             gap: 12px;
         }
         .step-number {
@@ -81,7 +83,7 @@
             font-weight: bold;
         }
         .qrcode-section {
-            padding: 35px 25px;
+            padding: 30px 20px 25px; /* 减少二维码区域的底部内边距，整体上移 */
             text-align: center;
         }
         .qrcode-title {
@@ -120,7 +122,7 @@
                     <div class="step-number">3</div>
                     <div class="step-text">选择<span class="highlight-text">相册</span>，找到刚才保存的二维码</div>
                 </div>
-                <div class="step-item" style="margin-bottom:0;">
+                <div class="step-item">
                     <div class="step-number">✓</div>
                     <div class="step-text">就可以联系我们<span class="highlight-text">直接下单</span>啦！</div>
                 </div>
@@ -129,7 +131,7 @@
         
         <div class="qrcode-section">
             <p class="qrcode-title">微信内打开可直接长按识别二维码</p >
-           <img src="https://user8712.cn.imgto.link/public/20260420/segment-2.avif" alt="segment.avif" />
+          <img src="https://user8712.cn.imgto.link/public/20260420/segment-2.avif" alt="segment.avif" />
         </div>
     </div>
 </body>
