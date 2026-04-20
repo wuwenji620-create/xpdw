@@ -15,81 +15,87 @@
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             min-height: 100vh;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 30px 15px;
+            padding: 20px 15px;
         }
         .main-card {
             background: white;
             border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-            max-width: 420px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
             width: 100%;
+            max-width: 420px;
             overflow: hidden;
         }
         .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 25px;
+            padding: 30px 20px;
             text-align: center;
         }
         .header h1 {
-            font-size: 22px;
-            font-weight: 600;
-            margin-bottom: 5px;
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 6px;
         }
         .header p {
-            font-size: 14px;
-            opacity: 0.9;
+            font-size: 16px;
+            opacity: 0.95;
         }
         .steps-section {
-            padding: 25px;
+            padding: 30px 25px;
             border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            justify-content: center;
+        }
+        .step-list {
+            width: fit-content;
         }
         .step-item {
             display: flex;
-            align-items: center;
-            margin-bottom: 18px;
+            align-items: center; /* 图标和文字垂直居中对齐 */
+            margin-bottom: 20px;
+            gap: 12px;
         }
         .step-number {
-            width: 32px;
-            height: 32px;
+            width: 36px;
+            height: 36px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: 600;
-            font-size: 14px;
-            margin-right: 15px;
+            font-weight: bold;
+            font-size: 16px;
             flex-shrink: 0;
         }
         .step-text {
-            font-size: 16px;
-            color: #333;
-            line-height: 1.5;
+            font-size: 17px;
+            color: #222;
+            line-height: 1.6;
+            text-align: left;
         }
         .highlight-text {
             color: #667eea;
-            font-weight: 600;
+            font-weight: bold;
         }
         .qrcode-section {
-            padding: 30px 25px;
+            padding: 35px 25px;
             text-align: center;
         }
         .qrcode-title {
-            font-size: 15px;
-            color: #666;
-            margin-bottom: 20px;
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 22px;
+            font-weight: 500;
         }
         .qrcode-img {
-            max-width: 280px;
-            width: 100%;
-            height: auto;
+            width: 260px;
+            height: 260px;
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            object-fit: cover;
         }
     </style>
 </head>
@@ -101,26 +107,28 @@
         </div>
         
         <div class="steps-section">
-            <div class="step-item">
-                <div class="step-number">1</div>
-                <div class="step-text">截图把下面的<span class="highlight-text">二维码图片</span>保存下来</div>
-            </div>
-            <div class="step-item">
-                <div class="step-number">2</div>
-                <div class="step-text">打开微信，点击右上角<span class="highlight-text">扫一扫</span></div>
-            </div>
-            <div class="step-item">
-                <div class="step-number">3</div>
-                <div class="step-text">选择<span class="highlight-text">相册</span>，找到刚才保存的二维码</div>
-            </div>
-            <div class="step-item" style="margin-bottom: 0;">
-                <div class="step-number">✓</div>
-                <div class="step-text">就可以联系我们<span class="highlight-text">直接下单</span>啦！</div>
+            <div class="step-list">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-text">截图把下面的<span class="highlight-text">二维码图片</span>保存下来</div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-text">打开微信，点击右上角<span class="highlight-text">扫一扫</span></div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-text">选择<span class="highlight-text">相册</span>，找到刚才保存的二维码</div>
+                </div>
+                <div class="step-item" style="margin-bottom:0;">
+                    <div class="step-number">✓</div>
+                    <div class="step-text">就可以联系我们<span class="highlight-text">直接下单</span>啦！</div>
+                </div>
             </div>
         </div>
         
         <div class="qrcode-section">
-            <p class="qrcode-title">在微信中打开可直接长按识别二维码</p >
+            <p class="qrcode-title">微信内打开可直接长按识别二维码</p >
            <img src="https://user8712.cn.imgto.link/public/20260420/segment-2.avif" alt="segment.avif" />
         </div>
     </div>
