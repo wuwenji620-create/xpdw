@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>湛江鲜啤大王-添加企业微信下单</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            最小高度: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 15px;
+        }
+        .main-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            max-width: 420px;
+            宽度: 100%;
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            文本对齐: 居中;
+        }
+        .header h1 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .header p {
+            字体大小: 14像素;
+            opacity: 0.9;
+        }
+        .steps-section {
+            padding: 25px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .step-item {
+            display: flex;
+            align-items: center;
+            底部边距: 18像素;
+        }
+        .step-number {
+            宽度: 32像素;
+            height: 32px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            字体大小: 14像素;
+            右边距: 15像素;
+            弹性收缩: 0;
+        }
+        .step-text {
+            字体大小: 16像素;
+            color: #333;
+            行高: 1.5;
+        }
+        .高亮文本 {
+            color: #667eea;
+            font-weight: 600;
+        }
+
+            :  25像素
+            文本对齐: 居中;
+        }
+
+            font-size: 15px;
+            颜色: #666;
+            margin-bottom: 20像素;
+        }
+ {
+            最大宽度: 280像素;
+            宽度: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-card">
+        <div class="header">
+            <h1>湛江鲜啤大王</h1>
+            <p>扫码添加企业微信直接下单</p >
+        </div>
+        
+        <div class="steps-section">
+            <div class="step-item">
+                <div class="step-number">1</div>
+                <div class="step-text">截图把下面的<span class="highlight-text">二维码图片</span>保存下来</div>
+            </div>
+            <div class="step-item">
+                <div class="step-number">2</div>
+                <div class="step-text">打开微信，点击右上角<span class="highlight-text">扫一扫</span></div>
+            </div>
+            <div class="step-item">
+                <div class="step-number">3</div>
+                <div class="step-text">选择<span class="highlight-text">相册</span>，找到刚才保存的二维码</div>
+            </div>
+            <div class="step-item" style="margin-bottom: 0;">
+                <div class="step-number">✓</div>
+                <div class="step-text">就可以联系我们<span class="highlight-text">直接下单</span>啦！</div>
+            </div>
+        </div>
+        
+        <div class="qrcode-section">
+            < img class="qrcode-img" src="https://user8712.cn.imgto.link/public/20260420/segment-2.avif" alt="湛江鲜啤大王 企业微信二维码">
+        </div>
+    </div>
+</body>
+</html>
